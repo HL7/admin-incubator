@@ -1,0 +1,51 @@
+id: hl7.fhir.uv.admin-incubator
+canonical: http://hl7.org/fhir/uv/admin-incubator
+version: 0.1.0
+name: AdministrativeIncubator
+title: Administrative Incubator
+status: active
+publisher:
+  name: HL7 International / Patient Administration
+  url: http://www.hl7.org/Special/committees/pa
+contact:
+    telecom:
+      - system: url
+        value: http://www.hl7.org/Special/committees/pa
+description: The Administrative Incubator specification is a workspace for developing and testing administrative resources that are planned to be implemented in FHIR, but can iterate their definition faster than the core R6 specification.
+license: CC0-1.0
+fhirVersion: 6.0.0-ballot3
+instanceOptions:
+  manualSliceOrdering: true
+parameters:
+  apply-publisher: true
+  apply-contact: true
+  globals-in-artifacts: true
+  show-inherited-invariants: false
+  shownav: false
+  path-pages:
+    - input/pagecontent
+
+copyrightYear: 2022+
+releaseLabel: STU 1
+jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
+extension:
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+    valueCode: "trial-use"
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
+    valueInteger: "3"
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
+    valueCode: "pa"
+
+dependencies:
+
+pages:
+  index.md:
+    title: Patient Administration Incubator
+  changes.md:
+    title: Change Log
+
+menu:
+  Home: index.html
+  FHIR Artifacts:
+      Artifacts: artifacts.html
+      Change Log: changes.html

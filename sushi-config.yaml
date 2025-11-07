@@ -24,6 +24,22 @@ parameters:
   shownav: false
   path-pages:
     - input/pagecontent
+  path-resource:
+    - input/resources/chargeitem
+    - input/resources/chargeitemdefinition
+    - input/resources/personalrelationship
+    - input/resources/encounterhistory
+    - input/resources/insuranceplan
+    - input/resources/insuranceproduct
+    - input/resources/verificationresult
+  additional-resource: 
+    - input/resources/chargeitem/StructureDefinition-ChargeItem.xml
+    - input/resources/chargeitemdefinition/StructureDefinition-ChargeItemDefinition.xml
+    - input/resources/personalrelationship/StructureDefinition-PersonalRelationship.xml
+    - input/resources/encounterhistory/StructureDefinition-EncounterHistory.xml
+    - input/resources/insuranceplan/StructureDefinition-InsurancePlan.xml
+    - input/resources/insuranceproduct/StructureDefinition-InsuranceProduct.xml
+    - input/resources/verificationresult/StructureDefinition-VerificationResult.xml
 
 copyrightYear: 2022+
 releaseLabel: STU 1

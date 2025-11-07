@@ -37,6 +37,7 @@
   <entry>
     <resource>
       <SearchParameter>
+        <id value="pr-target"/>
         <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
           <valueString value="PersonalRelationship.target"/>
         </extension>
@@ -51,6 +52,7 @@
   <entry>
     <resource>
       <SearchParameter>
+        <id value="pr-relationshiptype"/>
         <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
           <valueString value="PersonalRelationship.relationshipType"/>
         </extension>

@@ -1,0 +1,17 @@
+# output/generation folders
+temp/
+output/
+input-cache/
+template/
+fsh-generated/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IG Publisher files we don't want in git
+_gencontinuous.bat
+_gencontinuous.sh
+_genonce.bat
+_genonce.sh
+_build.bat

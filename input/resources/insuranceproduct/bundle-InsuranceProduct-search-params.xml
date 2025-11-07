@@ -268,23 +268,4 @@
       </SearchParameter>
     </resource>
   </entry>
-  <entry>
-    <resource>
-      <SearchParameter>
-        <id value="InsuranceProduct-endpoint"/>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use"/>
-        </extension>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
-          <valueString value="InsuranceProduct.endpoint"/>
-        </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/EpisodeOfCare-subject"/>
-        <description value="The endpoint(s) applicable to this product"/>
-        <code value="endpoint"/>
-        <type value="reference"/>
-        <expression value="InsuranceProduct.endpoint"/>
-        <processingMode value="normal"/>
-      </SearchParameter>
-    </resource>
-  </entry>
 </Bundle>

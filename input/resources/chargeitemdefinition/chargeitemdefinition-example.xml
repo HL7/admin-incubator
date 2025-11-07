@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ChargeItemDefinition xmlns="http://hl7.org/fhir">
-	<id value="ebm"/>
+	<id value="example"/>
 	<url value="http://fhir.de/ChargeItemDefinition/kbv/ebm-30110"/>
 	<identifier>
 		<system value="urn:ietf:rfc:3986"/>

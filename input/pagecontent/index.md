@@ -1,5 +1,17 @@
-### Background
-We nearly got there with this set of resources...
+### Introduction
+This Additional Resources Incubator Implementation Guide (IG) defines FHIR resources that require additional review and enhancement before becoming normative content and included in a future version of the FHIR specification.
+We welcome and encourage all feedback on this content.
+
+#### Resources
+<table class="grid">
+{% include table-name-structuredefinitions-en.xhtml %}
+</table>
+
+#### Operations
+<table class="grid">
+{% include table-name-operationdefinitions-en.xhtml %}
+</table>
+
 
 ### Cross Version Analysis
 {% lang-fragment cross-version-analysis.xhtml %}

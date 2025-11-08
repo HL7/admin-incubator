@@ -32,6 +32,9 @@ parameters:
     - input/resources/insuranceplan
     - input/resources/insuranceproduct
     - input/resources/verificationresult
+    - input/resources/patient
+    - input/resources/encounter
+    - input/resources/episodeofcare
   additional-resource: 
     - input/resources/chargeitem/StructureDefinition-ChargeItem.xml
     - input/resources/chargeitemdefinition/StructureDefinition-ChargeItemDefinition.xml

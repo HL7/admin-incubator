@@ -13,7 +13,7 @@ contact:
         value: http://www.hl7.org/Special/committees/pa
 description: The Administrative Incubator specification is a workspace for developing and testing administrative resources that are planned to be implemented in FHIR, but can iterate their definition faster than the core R6 specification.
 license: CC0-1.0
-fhirVersion: 6.0.0-ballot3
+fhirVersion: 6.0.0-ballot5
 instanceOptions:
   manualSliceOrdering: true
 parameters:

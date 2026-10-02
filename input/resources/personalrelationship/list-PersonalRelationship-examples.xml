@@ -5,10 +5,10 @@
   <status value="current"/>
   <mode value="working"/>
   <entry>
-    <extension url="http://hl7.org/fhir/build/StructureDefinition/description">
+    <extension url="http://hl7.org/fhir/StructureDefinition/description">
       <valueString value="PersonalRelationship Benedicte du Marche"/>
     </extension>
-    <extension url="http://hl7.org/fhir/build/StructureDefinition/title">
+    <extension url="http://hl7.org/fhir/StructureDefinition/title">
       <valueString value="personalrelationship-example"/>
     </extension>
     <item>

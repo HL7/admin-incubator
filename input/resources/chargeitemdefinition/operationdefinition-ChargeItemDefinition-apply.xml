@@ -11,7 +11,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
   </extension>
-  <extension url="http://hl7.org/fhir/build/StructureDefinition/example">
+  <extension url="http://hl7.org/fhir/StructureDefinition/example">
     <extension url="list">
       <valueString value="1"/>
     </extension>
@@ -22,7 +22,7 @@
       <valueString value="$apply-request.txt"/>
     </extension>
   </extension>
-  <extension url="http://hl7.org/fhir/build/StructureDefinition/example">
+  <extension url="http://hl7.org/fhir/StructureDefinition/example">
     <extension url="list">
       <valueString value="1"/>
     </extension>
@@ -33,11 +33,11 @@
       <valueString value="$apply-response.txt"/>
     </extension>
   </extension>
-  <extension url="http://hl7.org/fhir/build/StructureDefinition/footer">
+  <extension url="http://hl7.org/fhir/StructureDefinition/footer">
     <valueMarkdown value="The result of invoking this operation is a resource of the type specified by the activity definition, with all the definitions resolved as appropriate for the type of resource. Any dynamicValue elements will be evaluated (in the order in which they appear in the resource) and the results applied to the returned resource.  If the ChargetItemDefinition includes library references, those libraries will be available to the evaluated expressions. If those libraries have parameters, those parameters will be bound by name to the parameters given to the operation. For a more detailed description, refer to the ChargetItemDefinition resource"/>
   </extension>
-  <url value="http://hl7.org/fhir/build/OperationDefinition/ChargeItemDefinition-apply"/>
-  <version value="6.0.0"/>
+  <url value="http://hl7.org/fhir/OperationDefinition/ChargeItemDefinition-apply"/>
+  
   <name value="Apply"/>
   <title value="Apply"/>
   <status value="draft"/>

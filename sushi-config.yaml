@@ -1,5 +1,5 @@
 id: hl7.fhir.uv.admin-incubator
-canonical: http://hl7.org/fhir/uv/admin-incubator
+canonical: http://hl7.org/fhir/uv/admin-incubator/ImplementationGuide/hl7.fhir.uv.admin-incubator
 version: 0.1.0
 name: AdministrativeIncubator
 title: Administrative Incubator
@@ -13,7 +13,7 @@ contact:
         value: http://www.hl7.org/Special/committees/pa
 description: The Administrative Incubator specification is a workspace for developing and testing administrative resources that are planned to be implemented in FHIR, but can iterate their definition faster than the core R6 specification.
 license: CC0-1.0
-fhirVersion: 6.0.0-ballot5
+fhirVersion: 6.0.0-snapshot1
 instanceOptions:
   manualSliceOrdering: true
 parameters:
@@ -22,6 +22,8 @@ parameters:
   globals-in-artifacts: true
   show-inherited-invariants: false
   shownav: false
+  special-url-base: http://hl7.org/fhir
+  auto-oid-root: 2.16.840.1.113883.4.642.40.96 
   path-pages:
     - input/pagecontent
   path-resource:
@@ -56,7 +58,9 @@ extension:
     valueCode: "pa"
 
 dependencies:
-
+  hl7.fhir.uv.immunization-incubator: current
+  hl7.fhir.r6.examples: 6.0.0-snapshot1
+  
 pages:
   index.md:
     title: Patient Administration Incubator

@@ -9,10 +9,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
-          <valueString value="InsuranceProduct.contact.address"/>
-        </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/InsuranceProduct-address"/>
+        <url value="http://hl7.org/fhir/SearchParameter/InsuranceProduct-address"/>
         <description value="A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text"/>
         <code value="contact-address"/>
         <type value="string"/>
@@ -28,10 +25,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
-          <valueString value="InsuranceProduct.contact.address.city"/>
-        </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/InsuranceProduct-address-city"/>
+        <url value="http://hl7.org/fhir/SearchParameter/InsuranceProduct-address-city"/>
         <description value="A city specified in an address"/>
         <code value="contact-address-city"/>
         <type value="string"/>
@@ -47,10 +41,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
-          <valueString value="InsuranceProduct.contact.address.country"/>
-        </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/InsuranceProduct-address-country"/>
+        <url value="http://hl7.org/fhir/SearchParameter/InsuranceProduct-address-country"/>
         <description value="A country specified in an address"/>
         <code value="contact-address-country"/>
         <type value="string"/>
@@ -66,10 +57,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
-          <valueString value="InsuranceProduct.contact.address.postalCode"/>
-        </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/InsuranceProduct-address-postalcode"/>
+        <url value="http://hl7.org/fhir/SearchParameter/InsuranceProduct-address-postalcode"/>
         <description value="A postal code specified in an address"/>
         <code value="contact-address-postalcode"/>
         <type value="string"/>
@@ -85,10 +73,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
-          <valueString value="InsuranceProduct.contact.address.state"/>
-        </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/InsuranceProduct-address-state"/>
+        <url value="http://hl7.org/fhir/SearchParameter/InsuranceProduct-address-state"/>
         <description value="A state specified in an address"/>
         <code value="contact-address-state"/>
         <type value="string"/>
@@ -104,10 +89,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
-          <valueString value="InsuranceProduct.contact.address.use"/>
-        </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/InsuranceProduct-address-use"/>
+        <url value="http://hl7.org/fhir/SearchParameter/InsuranceProduct-address-use"/>
         <description value="A use code specified in an address"/>
         <code value="contact-address-use"/>
         <type value="token"/>
@@ -123,10 +105,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
-          <valueString value="InsuranceProduct.administeredBy"/>
-        </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/InsuranceProduct-administered-by"/>
+        <url value="http://hl7.org/fhir/SearchParameter/InsuranceProduct-administered-by"/>
         <description value="Product administrator"/>
         <code value="administered-by"/>
         <type value="reference"/>
@@ -142,10 +121,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
-          <valueString value="InsuranceProduct.endpoint"/>
-        </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/InsuranceProduct-endpoint"/>
+        <url value="http://hl7.org/fhir/SearchParameter/InsuranceProduct-endpoint"/>
         <description value="Technical endpoint"/>
         <code value="endpoint"/>
         <type value="reference"/>
@@ -161,10 +137,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
-          <valueString value="InsuranceProduct.identifier"/>
-        </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/InsuranceProduct-identifier"/>
+        <url value="http://hl7.org/fhir/SearchParameter/InsuranceProduct-identifier"/>
         <description value="Any identifier for the product (not the accreditation issuer's identifier)"/>
         <code value="identifier"/>
         <type value="token"/>
@@ -180,10 +153,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
-          <valueString value="InsuranceProduct.name,InsuranceProduct.alias"/>
-        </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/InsuranceProduct-name"/>
+        <url value="http://hl7.org/fhir/SearchParameter/InsuranceProduct-name"/>
         <description value="A portion of the insurance product's name or alias"/>
         <code value="name"/>
         <type value="string"/>
@@ -199,10 +169,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
-          <valueString value="InsuranceProduct.ownedBy"/>
-        </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/InsuranceProduct-owned-by"/>
+        <url value="http://hl7.org/fhir/SearchParameter/InsuranceProduct-owned-by"/>
         <description value="The issuer of the insurance product"/>
         <code value="owned-by"/>
         <type value="reference"/>
@@ -218,10 +185,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
-          <valueString value="InsuranceProduct.name"/>
-        </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/InsuranceProduct-phonetic"/>
+        <url value="http://hl7.org/fhir/SearchParameter/InsuranceProduct-phonetic"/>
         <description value="A portion of the product's name using some kind of phonetic matching algorithm"/>
         <code value="phonetic"/>
         <type value="string"/>
@@ -237,10 +201,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
-          <valueString value="InsuranceProduct.status"/>
-        </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/InsuranceProduct-status"/>
+        <url value="http://hl7.org/fhir/SearchParameter/InsuranceProduct-status"/>
         <description value="Is the Product record active"/>
         <code value="status"/>
         <type value="token"/>
@@ -256,10 +217,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
-          <valueString value="InsuranceProduct.type"/>
-        </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/InsuranceProduct-type"/>
+        <url value="http://hl7.org/fhir/SearchParameter/InsuranceProduct-type"/>
         <description value="A code for the type of insurance product"/>
         <code value="type"/>
         <type value="token"/>

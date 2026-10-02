@@ -20,7 +20,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="pa"/>
   </extension>
-  <extension url="http://hl7.org/fhir/build/StructureDefinition/entered-in-error-status">
+  <extension url="http://hl7.org/fhir/StructureDefinition/entered-in-error-status">
     <valueCode value=".status = retired"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/InsuranceProduct"/>
@@ -28,7 +28,7 @@
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:oid:2.16.840.1.113883.4.642.5.1354"/>
   </identifier>
-  <version value="6.0.0"/>
+  
   <name value="InsuranceProduct"/>
   <title value="Insurance Product"/>
   <status value="draft"/>
@@ -181,7 +181,7 @@
       </mapping>
     </element>
     <element id="InsuranceProduct.alias">
-      <extension url="http://hl7.org/fhir/build/StructureDefinition/committee-notes">
+      <extension url="http://hl7.org/fhir/StructureDefinition/committee-notes">
         <valueString value="This is used in many registries, and is often very important in searching."/>
       </extension>
       <path value="InsuranceProduct.alias"/>

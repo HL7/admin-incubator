@@ -9,10 +9,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
-          <valueString value="VerificationResult.target"/>
-        </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/VerificationResult-target"/>
+        <url value="http://hl7.org/fhir/SearchParameter/VerificationResult-target"/>
         <description value="A resource that was validated"/>
         <code value="target"/>
         <type value="reference"/>
@@ -29,10 +26,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
-          <valueString value="VerificationResult.attestation.communicationMethod"/>
-        </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/verificationresult-attestation-method"/>
+        <url value="http://hl7.org/fhir/SearchParameter/verificationresult-attestation-method"/>
         <version value="0.2.0"/>
         <name value="Verificationresult_attestation_method"/>
         <status value="draft"/>
@@ -57,7 +51,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/verificationresult-attestation-onbehalfof"/>
+        <url value="http://hl7.org/fhir/SearchParameter/verificationresult-attestation-onbehalfof"/>
         <version value="0.2.0"/>
         <name value="Verificationresult_attestation_onbehalfof"/>
         <status value="draft"/>
@@ -92,7 +86,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/verificationresult-attestation-who"/>
+        <url value="http://hl7.org/fhir/SearchParameter/verificationresult-attestation-who"/>
         <version value="0.2.0"/>
         <name value="Verificationresult_attestation_who"/>
         <status value="draft"/>
@@ -127,7 +121,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/verificationresult-primarysource-date"/>
+        <url value="http://hl7.org/fhir/SearchParameter/verificationresult-primarysource-date"/>
         <version value="0.2.0"/>
         <name value="Verificationresult_primarysource_date"/>
         <status value="draft"/>
@@ -158,7 +152,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/verificationresult-primarysource-type"/>
+        <url value="http://hl7.org/fhir/SearchParameter/verificationresult-primarysource-type"/>
         <version value="0.2.0"/>
         <name value="Verificationresult_primarysource_type"/>
         <status value="draft"/>
@@ -183,7 +177,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/verificationresult-primarysource-who"/>
+        <url value="http://hl7.org/fhir/SearchParameter/verificationresult-primarysource-who"/>
         <version value="0.2.0"/>
         <name value="Verificationresult_primarysource_who"/>
         <status value="draft"/>
@@ -218,7 +212,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/verificationresult-status-date"/>
+        <url value="http://hl7.org/fhir/SearchParameter/verificationresult-status-date"/>
         <version value="0.2.0"/>
         <name value="Verificationresult_status_date"/>
         <status value="draft"/>
@@ -249,7 +243,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/verificationresult-validation-status"/>
+        <url value="http://hl7.org/fhir/SearchParameter/verificationresult-validation-status"/>
         <version value="0.2.0"/>
         <name value="Verificationresult_validation_status"/>
         <status value="draft"/>
@@ -273,7 +267,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/verificationresult-validator-organization"/>
+        <url value="http://hl7.org/fhir/SearchParameter/verificationresult-validator-organization"/>
         <version value="0.2.0"/>
         <name value="Verificationresult_validator_organization"/>
         <status value="draft"/>

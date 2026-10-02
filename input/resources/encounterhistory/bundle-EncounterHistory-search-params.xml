@@ -9,10 +9,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
-          <valueString value="EncounterHistory.status"/>
-        </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/EncounterHistory-status"/>
+        <url value="http://hl7.org/fhir/SearchParameter/EncounterHistory-status"/>
         <description value="Status of the Encounter history entry"/>
         <code value="status"/>
         <type value="token"/>
@@ -28,10 +25,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
-          <valueString value="EncounterHistory.encounter"/>
-        </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/EncounterHistory-encounter"/>
+        <url value="http://hl7.org/fhir/SearchParameter/EncounterHistory-encounter"/>
         <description value="The Encounter associated with this set of history values"/>
         <code value="encounter"/>
         <type value="reference"/>
@@ -48,10 +42,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
-          <valueString value="EncounterHistory.identifier"/>
-        </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/EncounterHistory-identifier"/>
+        <url value="http://hl7.org/fhir/SearchParameter/EncounterHistory-identifier"/>
         <description value="Identifier(s) by which this encounter is known"/>
         <code value="identifier"/>
         <type value="token"/>
@@ -67,10 +58,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
-          <valueString value="EncounterHistory.subject"/>
-        </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/EncounterHistory-patient"/>
+        <url value="http://hl7.org/fhir/SearchParameter/EncounterHistory-patient"/>
         <description value="The patient present at the encounter"/>
         <code value="patient"/>
         <type value="reference"/>
@@ -88,10 +76,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
-          <valueString value="EncounterHistory.subject"/>
-        </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/EncounterHistory-subject"/>
+        <url value="http://hl7.org/fhir/SearchParameter/EncounterHistory-subject"/>
         <description value="The patient or group present at the encounter"/>
         <code value="subject"/>
         <type value="reference"/>

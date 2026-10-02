@@ -21,7 +21,7 @@
     <valueCode value="pa"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/PersonalRelationship"/>
-  <version value="6.0.0"/>
+  
   <name value="PersonalRelationship"/>
   <title value="Personal Relationship"/>
   <status value="draft"/>

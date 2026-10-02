@@ -20,7 +20,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="pa"/>
   </extension>
-  <extension url="http://hl7.org/fhir/build/StructureDefinition/entered-in-error-status">
+  <extension url="http://hl7.org/fhir/StructureDefinition/entered-in-error-status">
     <valueCode value=".status=entered-in-error"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/EncounterHistory"/>
@@ -28,7 +28,7 @@
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:oid:2.16.840.1.113883.4.642.5.1784"/>
   </identifier>
-  <version value="6.0.0"/>
+  
   <name value="EncounterHistory"/>
   <status value="draft"/>
   <date value="2021-01-02T08:58:31+11:00"/>
@@ -64,7 +64,7 @@
   <derivation value="specialization"/>
   <differential>
     <element id="EncounterHistory">
-      <extension url="http://hl7.org/fhir/build/StructureDefinition/svg">
+      <extension url="http://hl7.org/fhir/StructureDefinition/svg">
         <valueCode value="0,0"/>
       </extension>
       <path value="EncounterHistory"/>
@@ -181,9 +181,6 @@
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="EncounterType"/>
-        </extension>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
-          <valueString value="The type of encounter."/>
         </extension>
         <strength value="example"/>
         <description value="A specific code indicating type of service provided"/>
@@ -325,7 +322,7 @@
       </mapping>
     </element>
     <element id="EncounterHistory.location">
-      <extension url="http://hl7.org/fhir/build/StructureDefinition/svg">
+      <extension url="http://hl7.org/fhir/StructureDefinition/svg">
         <valueCode value="370,100"/>
       </extension>
       <path value="EncounterHistory.location"/>

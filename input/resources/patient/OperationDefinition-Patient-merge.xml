@@ -11,7 +11,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
   </extension>
-  <extension url="http://hl7.org/fhir/build/StructureDefinition/example">
+  <extension url="http://hl7.org/fhir/StructureDefinition/example">
     <extension url="list">
       <valueString value="1"/>
     </extension>
@@ -22,7 +22,7 @@
       <valueString value="$merge-request.txt"/>
     </extension>
   </extension>
-  <extension url="http://hl7.org/fhir/build/StructureDefinition/example">
+  <extension url="http://hl7.org/fhir/StructureDefinition/example">
     <extension url="list">
       <valueString value="1"/>
     </extension>
@@ -33,7 +33,7 @@
       <valueString value="$merge-response.txt"/>
     </extension>
   </extension>
-  <extension url="http://hl7.org/fhir/build/StructureDefinition/example">
+  <extension url="http://hl7.org/fhir/StructureDefinition/example">
     <extension url="list">
       <valueString value="1"/>
     </extension>
@@ -44,7 +44,7 @@
       <valueString value="$merge-provenance.txt"/>
     </extension>
   </extension>
-  <extension url="http://hl7.org/fhir/build/StructureDefinition/footer">
+  <extension url="http://hl7.org/fhir/StructureDefinition/footer">
     <valueMarkdown value="There must be exactly 1 source patient, which may  be identified by either the source-patient or source-patient-identifier parameters. Similarly, there must be exactly 1 target patient, identified by either the target-patient or target-patient-identifier parameters. In both cases, either a reference to the patient or a list of identifiers that can be used to identify the patient may be provided, but not both.&#xD;&#xD;The result-patient.id must be the same as the target patient reference (if the patient reference is provided as an input parameter).&#xD;&#xD;If a client needs the server to create a new patient merged from the 2 patient resources, the client should create a new patient record and then call the merge operation to merge each source patient resource into the newly created patient resource.&#xD;&#xD;A server may decide to delete the source record, but this is not defined by the standard merge operation, and if this occurs then the target patient's link property will remain unchanged.&#xD;"/>
   </extension>
   <url value="http://hl7.org/fhir/OperationDefinition/Patient-merge"/>

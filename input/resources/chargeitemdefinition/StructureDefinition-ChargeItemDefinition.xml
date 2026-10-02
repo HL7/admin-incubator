@@ -19,10 +19,10 @@
 	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
 		<valueCode value="pa"/>
 	</extension>
-	<extension url="http://hl7.org/fhir/build/StructureDefinition/entered-in-error-status">
+	<extension url="http://hl7.org/fhir/StructureDefinition/entered-in-error-status">
 		<valueCode value=".status = retired"/>
 	</extension>
-	<extension url="http://hl7.org/fhir/build/StructureDefinition/template">
+	<extension url="http://hl7.org/fhir/StructureDefinition/template">
 		<valueString value="MetadataResource"/>
 	</extension>
 	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-implements">
@@ -33,7 +33,7 @@
 		<system value="urn:ietf:rfc:3986"/>
 		<value value="urn:oid:2.16.840.1.113883.4.642.5.1383"/>
 	</identifier>
-	<version value="6.0.0"/>
+	
 	<name value="ChargeItemDefinition"/>
 	<title value="Charge Item Definition"/>
 	<status value="draft"/>
@@ -106,7 +106,7 @@
 			</mapping>
 		</element>
 		<element id="ChargeItemDefinition.url">
-			<extension url="http://hl7.org/fhir/build/StructureDefinition/uml-dir">
+			<extension url="http://hl7.org/fhir/StructureDefinition/uml-dir">
 				<valueCode value="Event.identifier"/>
 			</extension>
 			<path value="ChargeItemDefinition.url"/>
@@ -124,7 +124,7 @@
 				<severity value="warning"/>
 				<human value="URL should not contain | or # - these characters make processing canonical references problematic"/>
 				<expression value="exists() implies matches('^[^|# ]+$')"/>
-				<source value="http://hl7.org/fhir/StructureDefinition/CanonicalResource"/>
+				<source value="http://hl7.org/fhir/StructureDefinition/ChargeItemDefinition"/>
 			</constraint>
 			<isSummary value="true"/>
 			<mapping>

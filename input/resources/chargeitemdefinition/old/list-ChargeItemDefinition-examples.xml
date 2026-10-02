@@ -5,10 +5,10 @@
   <status value="current"/>
   <mode value="working"/>
   <entry>
-    <extension url="http://hl7.org/fhir/build/StructureDefinition/description">
+    <extension url="http://hl7.org/fhir/StructureDefinition/description">
       <valueString value="example definition of EMB code 30110 (from a german billing system)"/>
     </extension>
-    <extension url="http://hl7.org/fhir/build/StructureDefinition/title">
+    <extension url="http://hl7.org/fhir/StructureDefinition/title">
       <valueString value="chargeitemdefinition-ebm-example"/>
     </extension>
     <item>
@@ -17,10 +17,10 @@
     </item>
   </entry>
   <entry>
-    <extension url="http://hl7.org/fhir/build/StructureDefinition/description">
+    <extension url="http://hl7.org/fhir/StructureDefinition/description">
       <valueString value="instance-specific billing information for a device with time-dependent tax rate"/>
     </extension>
-    <extension url="http://hl7.org/fhir/build/StructureDefinition/title">
+    <extension url="http://hl7.org/fhir/StructureDefinition/title">
       <valueString value="chargeitemdefinition-device-example"/>
     </extension>
     <item>

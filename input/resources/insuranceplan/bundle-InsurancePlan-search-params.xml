@@ -9,10 +9,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
-          <valueString value="InsurancePlan.identifier"/>
-        </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/InsurancePlan-identifier"/>
+        <url value="http://hl7.org/fhir/SearchParameter/InsurancePlan-identifier"/>
         <description value="External identifiers for this item"/>
         <code value="identifier"/>
         <type value="token"/>
@@ -28,10 +25,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
-          <valueString value="InsurancePlan.type"/>
-        </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/InsurancePlan-type"/>
+        <url value="http://hl7.org/fhir/SearchParameter/InsurancePlan-type"/>
         <description value="A code for the type of insurance plan"/>
         <code value="type"/>
         <type value="token"/>
@@ -47,10 +41,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
-          <valueString value="InsurancePlan.product"/>
-        </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/InsurancePlan-product"/>
+        <url value="http://hl7.org/fhir/SearchParameter/InsurancePlan-product"/>
         <description value="The product this plan is available to"/>
         <code value="product"/>
         <type value="reference"/>
@@ -66,10 +57,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
-          <valueString value="InsurancePlan.coverageArea"/>
-        </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/InsurancePlan-coverage-area"/>
+        <url value="http://hl7.org/fhir/SearchParameter/InsurancePlan-coverage-area"/>
         <description value="Location(s) insurance product is intended for/available to"/>
         <code value="coverage-area"/>
         <type value="reference"/>
@@ -85,10 +73,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
-          <valueString value="InsurancePlan.network"/>
-        </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/InsurancePlan-network"/>
+        <url value="http://hl7.org/fhir/SearchParameter/InsurancePlan-network"/>
         <description value="The product this plan is available to"/>
         <code value="network"/>
         <type value="reference"/>

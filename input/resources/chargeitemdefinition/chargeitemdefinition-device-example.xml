@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ChargeItemDefinition xmlns="http://hl7.org/fhir">
+<ChargeItemDefinition xmlns="http://hl7.org/fhir" resourceDefinition="http://hl7.org/fhir/StructureDefinition/ChargeItemDefinition|0.1.0">
 	<id value="device"/>
 	<url value="http://sap.org/ChargeItemDefinition/device-123"/>
 	<identifier>

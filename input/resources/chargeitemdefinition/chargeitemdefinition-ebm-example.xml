@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><ChargeItemDefinition xmlns="http://hl7.org/fhir">
+<?xml version="1.0" encoding="UTF-8"?><ChargeItemDefinition xmlns="http://hl7.org/fhir" resourceDefinition="http://hl7.org/fhir/StructureDefinition/ChargeItemDefinition|0.1.0">
 	<id value="ebm"/>
 	<url value="http://fhir.de/ChargeItemDefinition/kbv/ebm-30110"/>
 	<identifier>

@@ -6,7 +6,7 @@
     <valueCode value="pa"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="draft"/>
+    <valueCode value="trial-use"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1"/>
@@ -24,7 +24,7 @@
   
   <name value="ChargeItemCode"/>
   <title value="Charge Item Code"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2020-12-28T16:55:11+11:00"/>
   <publisher value="HL7 (FHIR Project)"/>

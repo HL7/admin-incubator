@@ -30,7 +30,7 @@
   </identifier>
   
   <name value="EncounterHistory"/>
-  <status value="draft"/>
+  <status value="active"/>
   <date value="2021-01-02T08:58:31+11:00"/>
   <publisher value="HL7 International / Patient Administration"/>
   <contact>
@@ -64,9 +64,6 @@
   <derivation value="specialization"/>
   <differential>
     <element id="EncounterHistory">
-      <extension url="http://hl7.org/fhir/StructureDefinition/svg">
-        <valueCode value="0,0"/>
-      </extension>
       <path value="EncounterHistory"/>
       <short value="A record of significant events/milestones key data throughout the history of an Encounter"/>
       <definition value="A record of significant events/milestones key data throughout the history of an Encounter, often tracked for specific purposes such as billing."/>
@@ -322,9 +319,6 @@
       </mapping>
     </element>
     <element id="EncounterHistory.location">
-      <extension url="http://hl7.org/fhir/StructureDefinition/svg">
-        <valueCode value="370,100"/>
-      </extension>
       <path value="EncounterHistory.location"/>
       <short value="Location of the patient at this point in the encounter"/>
       <definition value="The location of the patient at this point in the encounter, the multiple cardinality permits de-normalizing the levels of the location hierarchy, such as site/ward/room/bed."/>

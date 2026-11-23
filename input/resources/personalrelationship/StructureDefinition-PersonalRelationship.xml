@@ -9,7 +9,7 @@
     <valueString value="Base.Individuals"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="draft"/>
+    <valueCode value="trial-use"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="0"/>
@@ -24,7 +24,7 @@
   
   <name value="PersonalRelationship"/>
   <title value="Personal Relationship"/>
-  <status value="draft"/>
+  <status value="active"/>
   <date value="2021-01-02T08:58:31+11:00"/>
   <publisher value="HL7 International / Patient Administration"/>
   <contact>

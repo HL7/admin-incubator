@@ -23,8 +23,8 @@
   
   <name value="PersonalRelationshipType"/>
   <title value="Personal Relationship Type"/>
-  <status value="draft"/>
-  <experimental value="true"/>
+  <status value="active"/>
+  <experimental value="false"/>
   <publisher value="FHIR Project team"/>
   <contact>
     <telecom>

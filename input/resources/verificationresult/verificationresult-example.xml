@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<VerificationResult xmlns="http://hl7.org/fhir">
+<VerificationResult xmlns="http://hl7.org/fhir" resourceDefinition="http://hl7.org/fhir/StructureDefinition/VerificationResult|0.1.0">
 	<id value="example"/>
 	<!--
 	<target>

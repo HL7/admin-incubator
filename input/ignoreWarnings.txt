@@ -1,0 +1,14 @@
+== Suppressed Messages ==
+
+# the fhirpath primitive types are used in incubators (not really an experimental codesystem) https://jira.hl7.org/browse/FHIR-58822
+%.type[0].code: Reference to experimental CodeSystem http://hl7.org/fhir/CodeSystem/fhirpath-types|6.0.0-snapshot1
+
+# license codesystem referenced by the IG Publisher
+%: ImplementationGuide.license: Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7 from active ValueSet http://hl7.org/fhir/ValueSet/spdx-license|6.0.0-snapshot1
+
+# StructureMap.versionAlgorithm is defined this way in all other canonical resources, not sure why this is an error here.
+%.versionAlgorithm[x] (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)
+
+
+# This warning comes from the snapshot generator for the Resource.language property
+%.language (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)

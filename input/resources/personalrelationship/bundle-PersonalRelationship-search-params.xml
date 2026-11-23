@@ -6,6 +6,9 @@
     <resource>
       <SearchParameter>
         <id value="PersonalRelationship-patient"/>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="trial-use"/>
+        </extension>
         <url value="http://hl7.org/fhir/SearchParameter/PersonalRelationship-patient"/>
         <description value="The patient this related person is related to"/>
         <code value="patient"/>
@@ -19,6 +22,9 @@
     <resource>
       <SearchParameter>
         <id value="PersonalRelationship-source"/>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="trial-use"/>
+        </extension>
         <url value="http://hl7.org/fhir/SearchParameter/PersonalRelationship-source"/>
         <description value="The source of the relationship"/>
         <code value="source"/>
@@ -31,7 +37,10 @@
   <entry>
     <resource>
       <SearchParameter>
-        <id value="pr-target"/>
+        <id value="PersonalRelationship-target"/>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="trial-use"/>
+        </extension>
         <description value="The target of the relationship"/>
         <code value="target"/>
         <type value="reference"/>
@@ -43,7 +52,10 @@
   <entry>
     <resource>
       <SearchParameter>
-        <id value="pr-relationshiptype"/>
+        <id value="PersonalRelationship-relationshiptype"/>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="trial-use"/>
+        </extension>
         <description value="The personal relationship between the patient and the PersonalRelationship"/>
         <code value="relationship"/>
         <type value="token"/>

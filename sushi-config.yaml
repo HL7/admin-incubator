@@ -2,7 +2,7 @@ id: hl7.fhir.uv.admin-incubator
 canonical: http://hl7.org/fhir/uv/admin-incubator/ImplementationGuide/hl7.fhir.uv.admin-incubator
 version: 0.1.0
 name: AdministrativeIncubator
-title: Administrative Incubator
+title: FHIR R6 Administrative Incubator
 status: active
 publisher:
   name: HL7 International / Patient Administration

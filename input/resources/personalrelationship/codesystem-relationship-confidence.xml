@@ -19,7 +19,6 @@
   </contact>
   <description value="Confidence levels asserted for a personal relationship"/>
   <caseSensitive value="true"/>
-  <valueSet value="http://hl7.org/fhir/ValueSet/relationship-confidence"/>
   <content value="complete"/>
   <concept>
     <code value="certain"/>

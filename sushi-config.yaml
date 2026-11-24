@@ -41,7 +41,10 @@ parameters:
     - input/resources/personalrelationship/StructureDefinition-PersonalRelationship.xml
     - input/resources/encounterhistory/StructureDefinition-EncounterHistory.xml
     - input/resources/verificationresult/StructureDefinition-VerificationResult.xml
-
+  special-url:
+    - http://hl7.org/fhir/SearchParameter/verificationresult-validator-organization
+    - http://hl7.org/fhir/SearchParameter/VerificationResult-validation-status
+    
 copyrightYear: 2022+
 releaseLabel: STU 1
 jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"

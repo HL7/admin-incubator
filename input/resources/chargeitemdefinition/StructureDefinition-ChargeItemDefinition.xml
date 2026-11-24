@@ -671,10 +671,10 @@
 				<map value="N/A"/>
 			</mapping>
 		</element>
-		<element id="ChargeItemDefinition.instance">
-			<path value="ChargeItemDefinition.instance"/>
-			<short value="Instances this definition applies to"/>
-			<definition value="The defined billing details in this resource pertain to the given product instance(s)."/>
+		<element id="ChargeItemDefinition.definesBillingFor">
+			<path value="ChargeItemDefinition.definesBillingFor"/>
+			<short value="Instances/definitions this definition applies to"/>
+			<definition value="The defined billing details in this resource pertain to the referenced product instance(s), or indirectly through product definition(s)."/>
 			<comment value="In case of highly customized, individually produced or fitted devices/substances, the pricing information may be different for each instance of the product. This reference links pricing details to specific product instances."/>
 			<min value="0"/>
 			<max value="*"/>
@@ -687,6 +687,7 @@
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/ActivityDefinition"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/PlanDefinition"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/HealthcareService"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/SubstanceDefinition"/>
 			</type>
 			<mapping>
 				<identity value="rim"/>

@@ -16,8 +16,8 @@
   </extension>
   <url value="http://hl7.org/fhir/OperationDefinition/ChargeItemDefinition-apply"/>
   
-  <name value="Apply"/>
-  <title value="Apply"/>
+  <name value="ChargeItemDefinitionApply"/>
+  <title value="ChargeItemDefinition Apply"/>
   <status value="active"/>
   <kind value="operation"/>
   <date value="2021-01-05T10:01:24+11:00"/>

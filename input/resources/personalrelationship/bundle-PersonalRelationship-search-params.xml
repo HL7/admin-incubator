@@ -40,7 +40,6 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <url value="http://hl7.org/fhir/SearchParameter/PersonalRelationship-source"/>
         <description value="The source of the relationship"/>
         <code value="source"/>
         <type value="reference"/>
@@ -60,6 +59,21 @@
         <code value="target"/>
         <type value="reference"/>
         <expression value="PersonalRelationship.target"/>
+        <processingMode value="normal"/>
+      </SearchParameter>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <SearchParameter>
+        <id value="PersonalRelationship-party"/>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="trial-use"/>
+        </extension>
+        <description value="Either source or target of the relationship"/>
+        <code value="party"/>
+        <type value="reference"/>
+        <expression value="PersonalRelationship.source | PersonalRelationship.target"/>
         <processingMode value="normal"/>
       </SearchParameter>
     </resource>

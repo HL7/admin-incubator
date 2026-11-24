@@ -5,6 +5,21 @@
   <entry>
     <resource>
       <SearchParameter>
+        <id value="PersonalRelationship-active"/>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="trial-use"/>
+        </extension>
+        <description value="The active status of the personal relationship"/>
+        <code value="active"/>
+        <type value="token"/>
+        <expression value="PersonalRelationship.active"/>
+        <processingMode value="normal"/>
+      </SearchParameter>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <SearchParameter>
         <id value="PersonalRelationship-patient"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>

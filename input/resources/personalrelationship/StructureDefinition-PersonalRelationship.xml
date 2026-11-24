@@ -12,7 +12,7 @@
     <valueCode value="trial-use"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="0"/>
+    <valueInteger value="1"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="patient"/>
@@ -55,7 +55,7 @@
   <differential>
     <element id="PersonalRelationship">
       <path value="PersonalRelationship"/>
-      <short value="A relationship between two indiduals"/>
+      <short value="A relationship between two individuals"/>
       <definition value="The details of a direct relationship between two individuals. It does not contain information about the individuals themselves, just the relationship itself."/>
       <min value="0"/>
       <max value="*"/>
@@ -63,6 +63,21 @@
         <identity value="w5"/>
         <map value="administrative.individual"/>
       </mapping>
+    </element>
+    <element id="PersonalRelationship.active">
+      <path value="PersonalRelationship.active"/>
+      <short value="Whether this relationship information is in active use"/>
+      <definition value="Whether this relationship information is in active use."/>
+      <requirements value="Need to be able to mark a PersonalRelationship record as not to be used because it was created in error."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <meaningWhenMissing value="This resource is generally assumed to be active if no value is provided for the active element"/>
+      <isModifier value="true"/>
+      <isModifierReason value="This element is labelled as a modifier because it is a status element that can indicate that a record should not be treated as valid"/>
+      <isSummary value="true"/>
     </element>
     <element id="PersonalRelationship.source">
       <path value="PersonalRelationship.source"/>

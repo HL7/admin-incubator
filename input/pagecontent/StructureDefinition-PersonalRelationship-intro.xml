@@ -21,7 +21,9 @@
 			(e.g., father/daughter is mostly persistent, but resident in household is very transient).
 		</p>
 		<p>
-			Additionally, there is the ability to assert the certainty of the relationship.
+			Additionally, there is the ability to assert the certainty of the relationship.<br/>
+			The confidence element has an example binding to the <a href="ValueSet-relationship-confidence.html">Relationship-confidence</a> value set,
+			which includes certain, high, moderate, and low confidence levels, plus UNK from the v3 NullFlavor code system.
 		</p>
 		<p>
 			This is not for tracking relationships between a care team or provider and the patient. For example, the social worker would be a Practitioner on your Care Team.

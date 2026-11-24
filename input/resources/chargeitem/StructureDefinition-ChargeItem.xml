@@ -560,7 +560,7 @@
       <definition value="The unit price of the chargable item."/>
       <comment value="This could be communicated in ChargeItemDefinition. But if ChargeItemDefinition is not supported or not available, the unit price can be communicated in this property."/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="*"/>
       <type>
         <code value="MonetaryComponent"/>
       </type>
@@ -576,7 +576,7 @@
       <definition value="The total price for the chargable item, accounting for the quantity."/>
       <comment value=" Often, the total price may be be calculated and recorded on the Invoice, but if a calculated total price must be exchanged prior to Invoice creation, it can be communicated in this property."/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="*"/>
       <type>
         <code value="MonetaryComponent"/>
       </type>

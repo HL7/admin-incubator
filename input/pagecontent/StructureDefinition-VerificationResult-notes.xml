@@ -3,8 +3,14 @@
 	<div>
 <a name="notes"></a>
 	<h3>
-		Notes:
+		Element Level Verification
 	</h3>
+	<p>
+		The VerificationResult.target MAY point at a specific element within the targeted resource using the
+		<a href="https://hl7.org/fhir/extensions/StructureDefinition-targetElement.html">target element extension</a> or 
+		<a href="https://hl7.org/fhir/extensions/StructureDefinition-targetPath.html">target path extension</a>.
+		For example when updating a PractitionerRole.location to indicate a practitioner now offers services at a new location, the VerificationResult can indicate that the verification was done specifically on the PractitionerRole.location element.
+	</p>
 </div>
 
 </div>

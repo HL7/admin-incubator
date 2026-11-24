@@ -87,17 +87,6 @@
       </type>
       <isSummary value="true"/>
     </element>
-    <element id="VerificationResult.targetLocation">
-      <path value="VerificationResult.targetLocation"/>
-      <short value="The fhirpath location(s) within the resource that was validated"/>
-      <definition value="The fhirpath location(s) within the resource that was validated."/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="string"/>
-      </type>
-      <isSummary value="true"/>
-    </element>
     <element id="VerificationResult.need">
       <path value="VerificationResult.need"/>
       <short value="none | initial | periodic"/>

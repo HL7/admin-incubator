@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="relationship-confidence"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="pa"/>
+  </extension>
+  <url value="http://hl7.org/fhir/CodeSystem/relationship-confidence"/>
+  <name value="RelationshipConfidence"/>
+  <title value="Relationship-confidence"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7 International / Patient Administration"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/fhir"/>
+    </telecom>
+  </contact>
+  <description value="Confidence levels asserted for a personal relationship"/>
+  <caseSensitive value="true"/>
+  <valueSet value="http://hl7.org/fhir/ValueSet/relationship-confidence"/>
+  <content value="complete"/>
+  <concept>
+    <code value="certain"/>
+    <display value="Certain"/>
+    <definition value="This relationship between the parties is certain."/>
+  </concept>
+  <concept>
+    <code value="high"/>
+    <display value="High"/>
+    <definition value="High confidence the relationship between the parties is valid"/>
+  </concept>
+  <concept>
+    <code value="moderate"/>
+    <display value="Moderate"/>
+    <definition value="Moderate confidence the relationship between the parties is valid"/>
+  </concept>
+  <concept>
+    <code value="low"/>
+    <display value="Low"/>
+    <definition value="Low confidence the relationship between the parties is valid, this could be used where a relationship is only suspected."/>
+  </concept>
+</CodeSystem>

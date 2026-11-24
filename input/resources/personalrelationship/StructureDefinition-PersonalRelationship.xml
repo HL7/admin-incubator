@@ -144,7 +144,8 @@
           <valueString value="Confidence"/>
         </extension>
         <strength value="example"/>
-        <description value="Value to be provided"/>
+        <description value="Confidence levels asserted for a personal relationship"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/relationship-confidence"/>
       </binding>
     </element>
     <element id="PersonalRelationship.asserter">

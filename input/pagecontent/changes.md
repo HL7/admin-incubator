@@ -14,7 +14,4 @@ These are the Jira issues that have been applied to this content since R5 was pu
 * [FHIR-50653](https://jira.hl7.org/browse/FHIR-50653): PersonalRelationship add party search parameter
 
 **Non-Substantive**
-* (none)
-
-
-
+* [FHIR-50375](https://jira.hl7.org/browse/FHIR-50375): Clarify .source and .target descriptions and examples

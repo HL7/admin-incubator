@@ -60,6 +60,65 @@ dependencies:
   hl7.fhir.uv.immunization-incubator: current
   hl7.fhir.r6.examples: 6.0.0-snapshot1
   
+resources:
+  ChargeItem/example:
+    name: ChargeItem - General
+    description: Example of chargeitem
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/ChargeItem
+  ChargeItemDefinition/ebm:
+    name: EBM Billing Code
+    description: example definition of EMB code 30110 (from a german billing system)
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/ChargeItemDefinition
+  ChargeItemDefinition/device:
+    name: Billing information for Device
+    description: instance-specific billing information for a device with time-dependent tax rate
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/ChargeItemDefinition
+  EncounterHistory/example:
+    name: EncounterHistory - example
+    description: EncounterHistory example
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/EncounterHistory
+  Patient/jane:
+    name: Jane
+    description: Jane, Mary's mother in the family relationship examples.
+    isExample: true
+  Patient/john:
+    name: John
+    description: John, Mary's father in the family relationship examples.
+    isExample: true
+  Patient/mary:
+    name: Mary
+    description: Mary, the child in the family relationship examples.
+    isExample: true
+  PersonalRelationship/example:
+    name: Benedicte
+    description: PersonalRelationship Benedicte du Marche
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/mary-daughter-jane:
+    name: Mary is Jane's daughter
+    description: Mary (source) is the daughter (relationshipType) of Jane (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/jane-mother-mary:
+    name: Jane is Mary's mother
+    description: Jane (source) is the mother (relationshipType) of Mary (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/mary-daughter-john:
+    name: Mary is John's daughter
+    description: Mary (source) is the daughter (relationshipType) of John (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  VerificationResult/example:
+    name: VerificationResult - general
+    description: A general verification result example
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/VerificationResult
+
 pages:
   index.md:
     title: Patient Administration Incubator

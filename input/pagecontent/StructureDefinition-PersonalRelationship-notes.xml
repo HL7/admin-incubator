@@ -1,4 +1,21 @@
 <div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/1999/xhtml ../../schema/fhir-xhtml.xsd" xmlns="http://www.w3.org/1999/xhtml">
 
+<a name="family-relationship-example"></a>
+<h3>Family relationship example</h3>
+<p>
+  The family relationship examples use Patient resources for
+  <a href="Patient-jane.html">Jane</a>, <a href="Patient-john.html">John</a>, and
+  <a href="Patient-mary.html">Mary</a>, and three separate PersonalRelationship resources:
+</p>
+<ul>
+  <li><a href="PersonalRelationship-mary-daughter-jane.html">Mary (source) is the daughter (relationshipType) of Jane (target).</a></li>
+  <li><a href="PersonalRelationship-jane-mother-mary.html">Jane (source) is the mother (relationshipType) of Mary (target).</a></li>
+  <li><a href="PersonalRelationship-mary-daughter-john.html">Mary (source) is the daughter (relationshipType) of John (target).</a></li>
+</ul>
+<p>
+  Each PersonalRelationship describes only one direction. The daughter and mother relationships
+  between Mary and Jane are recorded explicitly, rather than relying on an inferred inverse.
+  Confidence applies only to the relationship on which it is recorded; omitting it does not assert certainty.
+</p>
 
 </div>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PersonalRelationship xmlns="http://hl7.org/fhir" resourceDefinition="http://hl7.org/fhir/StructureDefinition/PersonalRelationship|0.1.0">
+  <id value="mary-daughter-jane"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Mary (source) is the daughter (relationshipType) of Jane (target), with certain confidence.</p>
+    </div>
+  </text>
+  <source>
+    <reference value="Patient/mary"/>
+    <display value="Mary"/>
+  </source>
+  <relationshipType>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="DAU"/>
+    </coding>
+    <text value="Daughter"/>
+  </relationshipType>
+  <target>
+    <reference value="Patient/jane"/>
+    <display value="Jane"/>
+  </target>
+  <confidence>
+    <coding>
+      <system value="http://hl7.org/fhir/CodeSystem/relationship-confidence"/>
+      <code value="certain"/>
+      <display value="Certain"/>
+    </coding>
+  </confidence>
+</PersonalRelationship>

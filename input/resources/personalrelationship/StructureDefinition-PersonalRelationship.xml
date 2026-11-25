@@ -117,7 +117,7 @@
       <path value="PersonalRelationship.target"/>
       <short value="The individual that is the the target of the relationship"/>
       <definition value="The `target` is the individual to which the `source` is related.  In human language, you would say that `source` is the `relationshipType` of `target`." />
-      <comment value="For example, if the relationship is `daughter`, then the individual that is the `source` is the daughter of the `target`.&#xD;&#xD;See the family relationship example](StructureDefinition-PersonalRelationship.html#family-relationship-example) section for worked examples." />
+      <comment value="For example, if the relationship is `daughter`, then the individual that is the `source` is the daughter of the `target`.&#xD;&#xD;See the [family relationship example](StructureDefinition-PersonalRelationship.html#family-relationship-example) section for worked examples." />
       <min value="1"/>
       <max value="1"/>
       <type>

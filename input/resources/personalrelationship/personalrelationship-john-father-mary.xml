@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PersonalRelationship xmlns="http://hl7.org/fhir" resourceDefinition="http://hl7.org/fhir/StructureDefinition/PersonalRelationship|0.1.0">
+  <id value="john-father-mary" />
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>John (source) is the father (relationshipType) of Mary (target), with certain confidence.</p>
+    </div>
+  </text>
+  <source>
+    <reference value="Patient/john" />
+    <display value="John" />
+  </source>
+  <relationshipType>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <code value="FTH" />
+      <display value="father" />
+    </coding>
+    <text value="Father" />
+  </relationshipType>
+  <target>
+    <reference value="Patient/mary" />
+    <display value="Mary" />
+  </target>
+  <confidence>
+    <coding>
+      <system value="http://hl7.org/fhir/CodeSystem/relationship-confidence" />
+      <code value="certain" />
+      <display value="Certain" />
+    </coding>
+  </confidence>
+</PersonalRelationship>

@@ -20,17 +20,76 @@
 <p>
   The family relationship examples use Patient resources for
   <a href="Patient-jane.html">Jane</a>, <a href="Patient-john.html">John</a>, and
-  <a href="Patient-mary.html">Mary</a>, and three separate PersonalRelationship resources:
+  <a href="Patient-mary.html">Mary</a>, and four separate PersonalRelationship resources:
 </p>
 <ul>
   <li><a href="PersonalRelationship-mary-daughter-jane.html">Mary (source) is the daughter (relationshipType) of Jane (target).</a></li>
   <li><a href="PersonalRelationship-jane-mother-mary.html">Jane (source) is the mother (relationshipType) of Mary (target).</a></li>
   <li><a href="PersonalRelationship-mary-daughter-john.html">Mary (source) is the daughter (relationshipType) of John (target).</a></li>
+  <li><a href="PersonalRelationship-john-father-mary.html">John (source) is the father (relationshipType) of Mary (target).</a></li>
 </ul>
 <p>
   Each PersonalRelationship describes only one direction. The daughter and mother relationships
   between Mary and Jane are recorded explicitly, rather than relying on an inferred inverse.
   Confidence applies only to the relationship on which it is recorded; omitting it does not assert certainty.
+</p>
+
+<a name="complex-relationships"></a>
+<h3>More complex family relationships</h3>
+<p>
+  The extended and blended families below are separate extensions of the simple family above,
+  rather than one combined family. They reuse the Patient resources for Jane, John, and Mary.
+  The foster home is a separate household. All additional relationships explicitly record
+  <code>certain</code> confidence. Each table entry links to an individual PersonalRelationship
+  resource, including a separate resource for the inverse direction.
+</p>
+
+<a name="extended-family"></a>
+<h4>Extended family</h4>
+<p>
+  Jane's parents are <a href="Patient-alice.html">Alice</a> and
+  <a href="Patient-robert.html">Robert</a>. Jane and John also have a son,
+  <a href="Patient-peter.html">Peter</a>, who is Mary's brother; Mary is Peter's sister.
+  Alice and Robert are the maternal grandparents of both Mary and Peter.
+</p>
+<p>
+  In addition to the parent/child relationships in the simple family, the following resources
+  explicitly record the relationships between the grandparents and their daughter Jane,
+  the grandparents and each grandchild, Peter and his parents, and the two siblings.
+  A grandparent relationship is recorded directly rather than relying on an application to
+  derive it by traversing parent/child relationships.
+</p>
+
+<a name="blended-family"></a>
+<h4>Blended family</h4>
+<p>
+  In this extension of the simple family, <a href="Patient-tom.html">Tom</a> is John's
+  biological son from an earlier relationship and Jane's stepson. Jane is Tom's stepmother.
+  Tom and Mary share John as their biological father, so they are half-siblings, not step-siblings.
+  <a href="Patient-anna.html">Anna</a> is the adopted daughter of both Jane and John.
+  Mary and Tom are Anna's siblings within the adoptive family.
+</p>
+<p>
+  The relationship types distinguish biological, step, and adoptive parent/child relationships.
+  The generic sister and brother codes used for Anna's sibling relationships do not assert
+  biological kinship. Each relationship is recorded separately, rather than assuming that a
+  relationship with a parent automatically creates relationships with the other children.
+</p>
+
+<a name="foster-home"></a>
+<h4>Foster home</h4>
+<p>
+  In a separate household, <a href="Patient-emma.html">Emma</a> and
+  <a href="Patient-david.html">David</a> are foster parents of
+  <a href="Patient-leo.html">Leo</a>. Leo was placed with them from
+  2025-01-01 to 2025-12-31. Each of the four PersonalRelationship resources below records
+  that interval in <code>period</code>, with <code>certain</code> confidence.
+</p>
+<p>
+  The foster relationship does not by itself assert biological parentage or legal guardianship.
+  The placement has ended, but the relationships can still be retained as historical information.
+  These resources describe the familial relationships, not any care activities performed by
+  Emma or David.
 </p>
 
 </div>

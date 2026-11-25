@@ -93,6 +93,38 @@ resources:
     name: Mary
     description: Mary, the child in the family relationship examples.
     isExample: true
+  Patient/alice:
+    name: Alice
+    description: Alice, Jane's mother and Mary and Peter's maternal grandmother.
+    isExample: true
+  Patient/robert:
+    name: Robert
+    description: Robert, Jane's father and Mary and Peter's maternal grandfather.
+    isExample: true
+  Patient/peter:
+    name: Peter
+    description: Peter, Jane and John's son and Mary's brother.
+    isExample: true
+  Patient/tom:
+    name: Tom
+    description: Tom, John's son, Jane's stepson, and Mary's half-brother.
+    isExample: true
+  Patient/anna:
+    name: Anna
+    description: Anna, Jane and John's adopted daughter.
+    isExample: true
+  Patient/emma:
+    name: Emma
+    description: Emma, Leo's foster mother.
+    isExample: true
+  Patient/david:
+    name: David
+    description: David, Leo's foster father.
+    isExample: true
+  Patient/leo:
+    name: Leo
+    description: Leo, Emma and David's foster son.
+    isExample: true
   PersonalRelationship/example:
     name: Benedicte
     description: PersonalRelationship Benedicte du Marche

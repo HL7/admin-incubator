@@ -1,4 +1,19 @@
 <div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/1999/xhtml ../../schema/fhir-xhtml.xsd" xmlns="http://www.w3.org/1999/xhtml">
+<p>
+  Each PersonalRelationship resource records a single, unidirectional
+  relationship between two individuals. If the inverse relationship also
+  needs to be recorded, it is represented by a separate PersonalRelationship
+  resource. Properties such as confidence, period, and asserter are recorded
+  independently and can differ between the two directions.
+</p>
+<p>
+  Some relationship types imply an inverse relationship, but do not determine
+  its most specific type. For example, "father of" implies "child of", but
+  does not establish whether the child is a son or daughter. Likewise,
+  "child of" implies "parent of", but not specifically mother or father.
+  Recording one direction does not automatically create a PersonalRelationship
+  resource for the inverse direction.
+</p>
 
 <a name="family-relationship-example"></a>
 <h3>Family relationship example</h3>

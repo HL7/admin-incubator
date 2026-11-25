@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Group xmlns="http://hl7.org/fhir">
+  <id value="foster-household" />
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Foster household with Emma and David as members. Leo was a member from 2025-01-01 to 2025-12-31 and is no longer a member.</p>
+    </div>
+  </text>
+  <name value="Foster household" />
+  <type value="person" />
+  <membership value="enumerated" />
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/group-code" />
+      <code value="household" />
+      <display value="Household" />
+    </coding>
+  </code>
+  <member>
+    <entity>
+      <reference value="Patient/emma" />
+      <display value="Emma" />
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Patient/david" />
+      <display value="David" />
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Patient/leo" />
+      <display value="Leo" />
+    </entity>
+    <period>
+      <start value="2025-01-01" />
+      <end value="2025-12-31" />
+    </period>
+    <inactive value="true" />
+  </member>
+</Group>

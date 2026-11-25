@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PersonalRelationship xmlns="http://hl7.org/fhir" resourceDefinition="http://hl7.org/fhir/StructureDefinition/PersonalRelationship|0.1.0">
+  <id value="robert-father-in-law-john" />
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Robert (source) is the father-in-law (relationshipType) of John (target), with certain confidence.</p>
+    </div>
+  </text>
+  <source>
+    <reference value="Patient/robert" />
+    <display value="Robert" />
+  </source>
+  <relationshipType>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <code value="FTHINLAW" />
+      <display value="father-in-law" />
+    </coding>
+    <text value="Father-in-law" />
+  </relationshipType>
+  <target>
+    <reference value="Patient/john" />
+    <display value="John" />
+  </target>
+  <confidence>
+    <coding>
+      <system value="http://hl7.org/fhir/CodeSystem/relationship-confidence" />
+      <code value="certain" />
+      <display value="Certain" />
+    </coding>
+  </confidence>
+</PersonalRelationship>

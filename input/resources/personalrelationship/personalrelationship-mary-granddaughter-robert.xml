@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PersonalRelationship xmlns="http://hl7.org/fhir" resourceDefinition="http://hl7.org/fhir/StructureDefinition/PersonalRelationship|0.1.0">
+  <id value="mary-granddaughter-robert" />
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Mary (source) is the granddaughter (relationshipType) of Robert (target), with certain confidence.</p>
+    </div>
+  </text>
+  <source>
+    <reference value="Patient/mary" />
+    <display value="Mary" />
+  </source>
+  <relationshipType>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <code value="GRNDDAU" />
+      <display value="granddaughter" />
+    </coding>
+    <text value="Granddaughter" />
+  </relationshipType>
+  <target>
+    <reference value="Patient/robert" />
+    <display value="Robert" />
+  </target>
+  <confidence>
+    <coding>
+      <system value="http://hl7.org/fhir/CodeSystem/relationship-confidence" />
+      <code value="certain" />
+      <display value="Certain" />
+    </coding>
+  </confidence>
+</PersonalRelationship>

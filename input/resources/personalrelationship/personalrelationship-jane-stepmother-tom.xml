@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PersonalRelationship xmlns="http://hl7.org/fhir" resourceDefinition="http://hl7.org/fhir/StructureDefinition/PersonalRelationship|0.1.0">
+  <id value="jane-stepmother-tom" />
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Jane (source) is the stepmother (relationshipType) of Tom (target), with certain confidence.</p>
+    </div>
+  </text>
+  <source>
+    <reference value="Patient/jane" />
+    <display value="Jane" />
+  </source>
+  <relationshipType>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <code value="STPMTH" />
+      <display value="stepmother" />
+    </coding>
+    <text value="Stepmother" />
+  </relationshipType>
+  <target>
+    <reference value="Patient/tom" />
+    <display value="Tom" />
+  </target>
+  <confidence>
+    <coding>
+      <system value="http://hl7.org/fhir/CodeSystem/relationship-confidence" />
+      <code value="certain" />
+      <display value="Certain" />
+    </coding>
+  </confidence>
+</PersonalRelationship>

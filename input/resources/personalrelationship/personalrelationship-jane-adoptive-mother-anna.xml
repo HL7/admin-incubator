@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PersonalRelationship xmlns="http://hl7.org/fhir" resourceDefinition="http://hl7.org/fhir/StructureDefinition/PersonalRelationship|0.1.0">
+  <id value="jane-adoptive-mother-anna" />
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Jane (source) is the adoptive mother (relationshipType) of Anna (target), with certain confidence. The relationship applies from 2015-06-12.</p>
+    </div>
+  </text>
+  <source>
+    <reference value="Patient/jane" />
+    <display value="Jane" />
+  </source>
+  <relationshipType>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <code value="ADOPTM" />
+      <display value="adoptive mother" />
+    </coding>
+    <text value="Adoptive mother" />
+  </relationshipType>
+  <target>
+    <reference value="Patient/anna" />
+    <display value="Anna" />
+  </target>
+  <period>
+    <start value="2015-06-12" />
+  </period>
+  <confidence>
+    <coding>
+      <system value="http://hl7.org/fhir/CodeSystem/relationship-confidence" />
+      <code value="certain" />
+      <display value="Certain" />
+    </coding>
+  </confidence>
+</PersonalRelationship>

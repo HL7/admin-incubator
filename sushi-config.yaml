@@ -125,6 +125,10 @@ resources:
     name: Leo
     description: Leo, Emma and David's foster son.
     isExample: true
+  Group/foster-household:
+    name: Foster household
+    description: A household with Emma and David as members, and Leo's former membership recorded for his 2025 foster placement.
+    isExample: true
   PersonalRelationship/example:
     name: Benedicte
     description: PersonalRelationship Benedicte du Marche
@@ -143,6 +147,211 @@ resources:
   PersonalRelationship/mary-daughter-john:
     name: Mary is John's daughter
     description: Mary (source) is the daughter (relationshipType) of John (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/john-father-mary:
+    name: John is Mary's father
+    description: John (source) is the father (relationshipType) of Mary (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/alice-mother-jane:
+    name: Alice is Jane's mother
+    description: Alice (source) is the mother (relationshipType) of Jane (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/jane-daughter-alice:
+    name: Jane is Alice's daughter
+    description: Jane (source) is the daughter (relationshipType) of Alice (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/robert-father-jane:
+    name: Robert is Jane's father
+    description: Robert (source) is the father (relationshipType) of Jane (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/robert-father-in-law-john:
+    name: Robert is John's father-in-law
+    description: Robert (source) is the father-in-law (relationshipType) of John (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/john-husband-jane:
+    name: John is Jane's husband
+    description: John (source) is the husband (relationshipType) of Jane (target), with certain confidence. The relationship applies from 2017-06-12.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/jane-wife-john:
+    name: Jane is John's wife
+    description: Jane (source) is the wife (relationshipType) of John (target), with certain confidence. The relationship applies from 2017-06-12.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/john-son-in-law-robert:
+    name: John is Robert's son-in-law
+    description: John (source) is the son-in-law (relationshipType) of Robert (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/jane-daughter-robert:
+    name: Jane is Robert's daughter
+    description: Jane (source) is the daughter (relationshipType) of Robert (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/alice-grandmother-mary:
+    name: Alice is Mary's maternal grandmother
+    description: Alice (source) is the maternal grandmother (relationshipType) of Mary (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/mary-granddaughter-alice:
+    name: Mary is Alice's granddaughter
+    description: Mary (source) is the granddaughter (relationshipType) of Alice (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/robert-grandfather-mary:
+    name: Robert is Mary's maternal grandfather
+    description: Robert (source) is the maternal grandfather (relationshipType) of Mary (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/mary-granddaughter-robert:
+    name: Mary is Robert's granddaughter
+    description: Mary (source) is the granddaughter (relationshipType) of Robert (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/alice-grandmother-peter:
+    name: Alice is Peter's maternal grandmother
+    description: Alice (source) is the maternal grandmother (relationshipType) of Peter (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/peter-grandson-alice:
+    name: Peter is Alice's grandson
+    description: Peter (source) is the grandson (relationshipType) of Alice (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/robert-grandfather-peter:
+    name: Robert is Peter's maternal grandfather
+    description: Robert (source) is the maternal grandfather (relationshipType) of Peter (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/peter-grandson-robert:
+    name: Peter is Robert's grandson
+    description: Peter (source) is the grandson (relationshipType) of Robert (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/jane-mother-peter:
+    name: Jane is Peter's mother
+    description: Jane (source) is the mother (relationshipType) of Peter (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/peter-son-jane:
+    name: Peter is Jane's son
+    description: Peter (source) is the son (relationshipType) of Jane (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/john-father-peter:
+    name: John is Peter's father
+    description: John (source) is the father (relationshipType) of Peter (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/peter-son-john:
+    name: Peter is John's son
+    description: Peter (source) is the son (relationshipType) of John (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/peter-brother-mary:
+    name: Peter is Mary's brother
+    description: Peter (source) is the brother (relationshipType) of Mary (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/mary-sister-peter:
+    name: Mary is Peter's sister
+    description: Mary (source) is the sister (relationshipType) of Peter (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/john-father-tom:
+    name: John is Tom's father
+    description: John (source) is the father (relationshipType) of Tom (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/tom-son-john:
+    name: Tom is John's son
+    description: Tom (source) is the son (relationshipType) of John (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/jane-stepmother-tom:
+    name: Jane is Tom's stepmother
+    description: Jane (source) is the stepmother (relationshipType) of Tom (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/tom-stepson-jane:
+    name: Tom is Jane's stepson
+    description: Tom (source) is the stepson (relationshipType) of Jane (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/mary-half-sister-tom:
+    name: Mary is Tom's half-sister
+    description: Mary (source) is the half-sister (relationshipType) of Tom (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/tom-half-brother-mary:
+    name: Tom is Mary's half-brother
+    description: Tom (source) is the half-brother (relationshipType) of Mary (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/jane-adoptive-mother-anna:
+    name: Jane is Anna's adoptive mother
+    description: Jane (source) is the adoptive mother (relationshipType) of Anna (target), with certain confidence. The relationship applies from 2015-06-12.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/anna-adopted-daughter-jane:
+    name: Anna is Jane's adopted daughter
+    description: Anna (source) is the adopted daughter (relationshipType) of Jane (target), with certain confidence. The relationship applies from 2015-06-12.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/john-adoptive-father-anna:
+    name: John is Anna's adoptive father
+    description: John (source) is the adoptive father (relationshipType) of Anna (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/anna-adopted-daughter-john:
+    name: Anna is John's adopted daughter
+    description: Anna (source) is the adopted daughter (relationshipType) of John (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/mary-sister-anna:
+    name: Mary is Anna's sister
+    description: Mary (source) is the sister (relationshipType) of Anna (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/anna-sister-mary:
+    name: Anna is Mary's sister
+    description: Anna (source) is the sister (relationshipType) of Mary (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/tom-brother-anna:
+    name: Tom is Anna's brother
+    description: Tom (source) is the brother (relationshipType) of Anna (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/anna-sister-tom:
+    name: Anna is Tom's sister
+    description: Anna (source) is the sister (relationshipType) of Tom (target), with certain confidence.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/emma-foster-mother-leo:
+    name: Emma is Leo's foster mother
+    description: Emma (source) is the foster mother (relationshipType) of Leo (target), with certain confidence. The relationship applies from 2025-01-01 to 2025-12-31. The relationship applies within the foster household.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/leo-foster-son-emma:
+    name: Leo is Emma's foster son
+    description: Leo (source) is the foster son (relationshipType) of Emma (target), with certain confidence. The relationship applies from 2025-01-01 to 2025-12-31. The relationship applies within the foster household.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/david-foster-father-leo:
+    name: David is Leo's foster father
+    description: David (source) is the foster father (relationshipType) of Leo (target), with certain confidence. The relationship applies from 2025-01-01 to 2025-12-31. The relationship applies within the foster household.
+    isExample: true
+    profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
+  PersonalRelationship/leo-foster-son-david:
+    name: Leo is David's foster son
+    description: Leo (source) is the foster son (relationshipType) of David (target), with certain confidence. The relationship applies from 2025-01-01 to 2025-12-31. The relationship applies within the foster household.
     isExample: true
     profile: http://hl7.org/fhir/StructureDefinition/PersonalRelationship
   VerificationResult/example:

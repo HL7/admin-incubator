@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PersonalRelationship xmlns="http://hl7.org/fhir" resourceDefinition="http://hl7.org/fhir/StructureDefinition/PersonalRelationship|0.1.0">
+  <id value="leo-foster-son-emma" />
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Leo (source) is the foster son (relationshipType) of Emma (target), with certain confidence. The relationship applies from 2025-01-01 to 2025-12-31.</p>
+      <p>The relationship applies within the foster household.</p>
+    </div>
+  </text>
+  <source>
+    <reference value="Patient/leo" />
+    <display value="Leo" />
+  </source>
+  <relationshipType>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+      <code value="SONFOST" />
+      <display value="foster son" />
+    </coding>
+    <text value="Foster son" />
+  </relationshipType>
+  <target>
+    <reference value="Patient/emma" />
+    <display value="Emma" />
+  </target>
+  <period>
+    <start value="2025-01-01" />
+    <end value="2025-12-31" />
+  </period>
+  <confidence>
+    <coding>
+      <system value="http://hl7.org/fhir/CodeSystem/relationship-confidence" />
+      <code value="certain" />
+      <display value="Certain" />
+    </coding>
+  </confidence>
+  <group>
+    <reference value="Group/foster-household" />
+    <display value="Foster household" />
+  </group>
+</PersonalRelationship>

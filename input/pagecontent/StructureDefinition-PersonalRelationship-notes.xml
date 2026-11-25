@@ -22,12 +22,29 @@
   <a href="Patient-jane.html">Jane</a>, <a href="Patient-john.html">John</a>, and
   <a href="Patient-mary.html">Mary</a>, and four separate PersonalRelationship resources:
 </p>
-<ul>
-  <li><a href="PersonalRelationship-mary-daughter-jane.html">Mary (source) is the daughter (relationshipType) of Jane (target).</a></li>
-  <li><a href="PersonalRelationship-jane-mother-mary.html">Jane (source) is the mother (relationshipType) of Mary (target).</a></li>
-  <li><a href="PersonalRelationship-mary-daughter-john.html">Mary (source) is the daughter (relationshipType) of John (target).</a></li>
-  <li><a href="PersonalRelationship-john-father-mary.html">John (source) is the father (relationshipType) of Mary (target).</a></li>
-</ul>
+<img src="family-relationship-example.png" alt="Simple family relationship diagram" />
+<p>
+  <b>Note:</b> Not all relationships are included in each diagram. The tables and linked
+  resources show the relationships explicitly recorded in these examples.
+</p>
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Relationship (source to target)</th>
+      <th>Separately recorded inverse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="PersonalRelationship-mary-daughter-jane.html">Mary is Jane's daughter</a></td>
+      <td><a href="PersonalRelationship-jane-mother-mary.html">Jane is Mary's mother</a></td>
+    </tr>
+    <tr>
+      <td><a href="PersonalRelationship-mary-daughter-john.html">Mary is John's daughter</a></td>
+      <td><a href="PersonalRelationship-john-father-mary.html">John is Mary's father</a></td>
+    </tr>
+  </tbody>
+</table>
 <p>
   Each PersonalRelationship describes only one direction. The daughter and mother relationships
   between Mary and Jane are recorded explicitly, rather than relying on an inferred inverse.
@@ -51,14 +68,75 @@
   <a href="Patient-robert.html">Robert</a>. Jane and John also have a son,
   <a href="Patient-peter.html">Peter</a>, who is Mary's brother; Mary is Peter's sister.
   Alice and Robert are the maternal grandparents of both Mary and Peter.
+  For this scenario, Jane and John have been married since 2017-06-12.
+  Their husband and wife relationships record this date in <code>period.start</code>.
+  Together with Robert's relationship as Jane's father, these records make the connection
+  explicit: Robert is John's father-in-law and John is Robert's son-in-law.
+  The in-law relationships are recorded separately, and their periods are not specified.
 </p>
 <p>
   In addition to the parent/child relationships in the simple family, the following resources
   explicitly record the relationships between the grandparents and their daughter Jane,
-  the grandparents and each grandchild, Peter and his parents, and the two siblings.
+  the grandparents and each grandchild, Peter and his parents, the two siblings,
+  Jane and John as spouses, and Robert and John as in-laws.
   A grandparent relationship is recorded directly rather than relying on an application to
   derive it by traversing parent/child relationships.
 </p>
+<img src="extended-family-example.png" alt="Extended family relationship diagram" />
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Relationship (source to target)</th>
+      <th>Separately recorded inverse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="PersonalRelationship-alice-mother-jane.html">Alice is Jane's mother</a></td>
+      <td><a href="PersonalRelationship-jane-daughter-alice.html">Jane is Alice's daughter</a></td>
+    </tr>
+    <tr>
+      <td><a href="PersonalRelationship-robert-father-jane.html">Robert is Jane's father</a></td>
+      <td><a href="PersonalRelationship-jane-daughter-robert.html">Jane is Robert's daughter</a></td>
+    </tr>
+    <tr>
+      <td><a href="PersonalRelationship-john-husband-jane.html">John is Jane's husband (from 2017-06-12)</a></td>
+      <td><a href="PersonalRelationship-jane-wife-john.html">Jane is John's wife (from 2017-06-12)</a></td>
+    </tr>
+    <tr>
+      <td><a href="PersonalRelationship-robert-father-in-law-john.html">Robert is John's father-in-law</a></td>
+      <td><a href="PersonalRelationship-john-son-in-law-robert.html">John is Robert's son-in-law</a></td>
+    </tr>
+    <tr>
+      <td><a href="PersonalRelationship-alice-grandmother-mary.html">Alice is Mary's maternal grandmother</a></td>
+      <td><a href="PersonalRelationship-mary-granddaughter-alice.html">Mary is Alice's granddaughter</a></td>
+    </tr>
+    <tr>
+      <td><a href="PersonalRelationship-robert-grandfather-mary.html">Robert is Mary's maternal grandfather</a></td>
+      <td><a href="PersonalRelationship-mary-granddaughter-robert.html">Mary is Robert's granddaughter</a></td>
+    </tr>
+    <tr>
+      <td><a href="PersonalRelationship-alice-grandmother-peter.html">Alice is Peter's maternal grandmother</a></td>
+      <td><a href="PersonalRelationship-peter-grandson-alice.html">Peter is Alice's grandson</a></td>
+    </tr>
+    <tr>
+      <td><a href="PersonalRelationship-robert-grandfather-peter.html">Robert is Peter's maternal grandfather</a></td>
+      <td><a href="PersonalRelationship-peter-grandson-robert.html">Peter is Robert's grandson</a></td>
+    </tr>
+    <tr>
+      <td><a href="PersonalRelationship-jane-mother-peter.html">Jane is Peter's mother</a></td>
+      <td><a href="PersonalRelationship-peter-son-jane.html">Peter is Jane's son</a></td>
+    </tr>
+    <tr>
+      <td><a href="PersonalRelationship-john-father-peter.html">John is Peter's father</a></td>
+      <td><a href="PersonalRelationship-peter-son-john.html">Peter is John's son</a></td>
+    </tr>
+    <tr>
+      <td><a href="PersonalRelationship-peter-brother-mary.html">Peter is Mary's brother</a></td>
+      <td><a href="PersonalRelationship-mary-sister-peter.html">Mary is Peter's sister</a></td>
+    </tr>
+  </tbody>
+</table>
 
 <a name="blended-family"></a>
 <h4>Blended family</h4>
@@ -66,7 +144,9 @@
   In this extension of the simple family, <a href="Patient-tom.html">Tom</a> is John's
   biological son from an earlier relationship and Jane's stepson. Jane is Tom's stepmother.
   Tom and Mary share John as their biological father, so they are half-siblings, not step-siblings.
-  <a href="Patient-anna.html">Anna</a> is the adopted daughter of both Jane and John.
+  <a href="Patient-anna.html">Anna</a> was adopted by Jane on 2015-06-12, before Jane's
+  marriage to John on 2017-06-12. John is also recorded as Anna's adoptive father,
+  but his adoption date is not specified.
   Mary and Tom are Anna's siblings within the adoptive family.
 </p>
 <p>
@@ -74,7 +154,49 @@
   The generic sister and brother codes used for Anna's sibling relationships do not assert
   biological kinship. Each relationship is recorded separately, rather than assuming that a
   relationship with a parent automatically creates relationships with the other children.
+  Both directions of the Jane-Anna adoption relationship record 2015-06-12 in
+  <code>period.start</code>. John's adoptive relationship is recorded explicitly,
+  rather than inferred solely from his marriage to Jane, and its period is not specified.
 </p>
+<img src="blended-family-example.png" alt="Blended family relationship diagram" />
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Relationship (source to target)</th>
+      <th>Separately recorded inverse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="PersonalRelationship-john-father-tom.html">John is Tom's father</a></td>
+      <td><a href="PersonalRelationship-tom-son-john.html">Tom is John's son</a></td>
+    </tr>
+    <tr>
+      <td><a href="PersonalRelationship-jane-stepmother-tom.html">Jane is Tom's stepmother</a></td>
+      <td><a href="PersonalRelationship-tom-stepson-jane.html">Tom is Jane's stepson</a></td>
+    </tr>
+    <tr>
+      <td><a href="PersonalRelationship-tom-half-brother-mary.html">Tom is Mary's half-brother</a></td>
+      <td><a href="PersonalRelationship-mary-half-sister-tom.html">Mary is Tom's half-sister</a></td>
+    </tr>
+    <tr>
+      <td><a href="PersonalRelationship-jane-adoptive-mother-anna.html">Jane is Anna's adoptive mother (from 2015-06-12)</a></td>
+      <td><a href="PersonalRelationship-anna-adopted-daughter-jane.html">Anna is Jane's adopted daughter (from 2015-06-12)</a></td>
+    </tr>
+    <tr>
+      <td><a href="PersonalRelationship-john-adoptive-father-anna.html">John is Anna's adoptive father</a></td>
+      <td><a href="PersonalRelationship-anna-adopted-daughter-john.html">Anna is John's adopted daughter</a></td>
+    </tr>
+    <tr>
+      <td><a href="PersonalRelationship-mary-sister-anna.html">Mary is Anna's sister</a></td>
+      <td><a href="PersonalRelationship-anna-sister-mary.html">Anna is Mary's sister</a></td>
+    </tr>
+    <tr>
+      <td><a href="PersonalRelationship-tom-brother-anna.html">Tom is Anna's brother</a></td>
+      <td><a href="PersonalRelationship-anna-sister-tom.html">Anna is Tom's sister</a></td>
+    </tr>
+  </tbody>
+</table>
 
 <a name="foster-home"></a>
 <h4>Foster home</h4>
@@ -86,10 +208,39 @@
   that interval in <code>period</code>, with <code>certain</code> confidence.
 </p>
 <p>
+  The <a href="Group-foster-household.html">foster household Group</a> explicitly lists
+  Emma, David, and Leo as members, using <code>membership = enumerated</code> and the
+  household group code. Leo's membership period matches the placement dates, and
+  <code>member.inactive = true</code> indicates that he is no longer a member.
+  Each of the four PersonalRelationship resources references this Group through
+  <code>group</code>, placing the relationship within the context of that household.
+  The Group lists the individuals; the PersonalRelationship resources separately describe
+  their directed relationships, confidence, and applicable periods.
+</p>
+<p>
   The foster relationship does not by itself assert biological parentage or legal guardianship.
   The placement has ended, but the relationships can still be retained as historical information.
   These resources describe the familial relationships, not any care activities performed by
   Emma or David.
 </p>
+<img src="foster-home-example.png" alt="Foster household relationship diagram" />
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Relationship (source to target)</th>
+      <th>Separately recorded inverse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="PersonalRelationship-emma-foster-mother-leo.html">Emma is Leo's foster mother</a></td>
+      <td><a href="PersonalRelationship-leo-foster-son-emma.html">Leo is Emma's foster son</a></td>
+    </tr>
+    <tr>
+      <td><a href="PersonalRelationship-david-foster-father-leo.html">David is Leo's foster father</a></td>
+      <td><a href="PersonalRelationship-leo-foster-son-david.html">Leo is David's foster son</a></td>
+    </tr>
+  </tbody>
+</table>
 
 </div>

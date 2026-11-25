@@ -22,8 +22,8 @@
     <value value="urn:oid:2.16.840.1.113883.4.642.3.823"/>
   </identifier>
   
-  <name value="ChargeItemCode"/>
-  <title value="Charge Item Code"/>
+  <name value="ChargeItemCodeValueSet"/>
+  <title value="Charge Item Code ValueSet"/>
   <status value="active"/>
   <experimental value="false"/>
   <date value="2020-12-28T16:55:11+11:00"/>

@@ -21,8 +21,8 @@
     <value value="urn:oid:2.16.840.1.113883.4.642.2.259"/>
   </identifier> -->
   
-  <name value="PersonalRelationshipType"/>
-  <title value="Personal Relationship Type"/>
+  <name value="PersonalRelationshipTypeValueSet"/>
+  <title value="Personal Relationship Type ValueSet"/>
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="FHIR Project team"/>
